@@ -1,0 +1,13 @@
+lone_star_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "{{ env_var('account') }}"
+      database: "{{ env_var('database') }}"
+      user: "{{ env_var('user') }}"
+      password: "{{ env_var('password') }}"
+      role: "{{ env_var('role') }}"
+      schema: "{{ env_var('schema') }}"
+      warehouse: "{{ env_var('warehouse') }}"
+      threads: 4  
