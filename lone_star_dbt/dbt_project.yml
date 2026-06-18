@@ -1,0 +1,10 @@
+name: 'lone_star_dbt'
+version: '1.0.0'
+config-version: 2
+
+profile: 'lone_star_dbt'
+model-paths: ["models"]
+
+models:
+  lone_star_dbt:
+    +materialized: table
